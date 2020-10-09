@@ -14,7 +14,6 @@
 	border-style: dashed;
 	position: absolute;
 	animation: 17s hero linear forwards;
-	
 }
 @keyframes hero {
 	0%{
@@ -48,8 +47,12 @@
 		height: 73px;
 		border:solid blue 1px;
 		border-radius: 0%;
-		background:transparent;
+		opacity:1;
 		transform: rotate(90deg);
+	}
+	70.59%{
+		background:transparent;
+		opacity:0;
 	}
 	100%{
 		left: 422px;
@@ -58,7 +61,8 @@
 		height: 150px;
 		border-radius: 50%;
 		transform: rotate(90deg);
-		background: radial-gradient(rgb(251,218,97),rgb(247,107,28));
 		border: none;
+		opacity:1;
+		background: radial-gradient(rgb(251,218,97),rgb(247,107,28));
 	}
 }
