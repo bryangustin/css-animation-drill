@@ -1,57 +1,62 @@
 #stage{
-/*	background-image: url("images/css_animation_exercise_1.png");*/
-	background-color: lightgrey;
+	background-image: url("../images/css_animation_exercise_4.png");
 	width: 600px;
 	height: 600px;
 	background-size: cover;
 }
 #hero{
-	background-color: white;
-	width: 75px;
-	height: 75px;
-	margin-left: 10px;
-	margin-top: 10px;
+	background-color:white;
+	width: 73px;
+	height: 73px;
+	margin-left: 20px;
+	margin-top: 20px;
 	border:solid red 1px;
 	border-style: dashed;
-	position: relative;
-	animation: hero 5s linear normal;
+	position: absolute;
+	animation: hero 17s linear alternate;
 }
 @keyframes hero {
-	0% {
-		left: 10px; 
-		top:10px;
+	0%{
+		left:0px; 
+		top:0px;
 	}
-	20%{
-		left: 505px;
-		top: 10px;
+	29.41%{
+		left: 480px;
+		top: 0px;
 	}
-	40%{
-		left: 505px;
-		top: 200px;
+	41.17%{
+		left: 480px;
+		top: 180px;
 		transform: rotate(0deg);
 	}
-	60%{
+	44.11%{
 		left: 250px;
-		top: 200px;
+		top: 180px;
 		border:solid red 1px;
 		transform: rotate(45deg);
 	}
-	80%{
-		left: 10px;
-		top: 200px;
+	55.87%{
+		left: 250px;
+		top: 180px;
+		border:solid red 1px;
+		transform: rotate(45deg);
+	}
+	70.58%{
+		left: 0px;
+		top: 184px;
 		width: 75px;
 		height: 75px;
 		border:solid blue 1px;
 		border-radius: 0%;
-		background: white;
+		background:white;
 		transform: rotate(0deg);
 	}
 	100%{
-		left: 350px;
-		top: 400px;
+		left: 422px;
+		top: 421px;
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;
-		background: linear-gradient(#f76B1C, #FBDA61);
+		background: linear-gradient(rgba(247,107,28,1),rgba(251,218,97,1));
 	}
 }
