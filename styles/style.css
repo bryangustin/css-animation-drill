@@ -1,0 +1,57 @@
+#stage{
+/*	background-image: url("images/css_animation_exercise_1.png");*/
+	background-color: lightgrey;
+	width: 600px;
+	height: 600px;
+	background-size: cover;
+}
+#hero{
+	background-color: white;
+	width: 75px;
+	height: 75px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border:solid red 1px;
+	border-style: dashed;
+	position: relative;
+	animation: hero 5s linear normal;
+}
+@keyframes hero {
+	0% {
+		left: 10px; 
+		top:10px;
+	}
+	20%{
+		left: 505px;
+		top: 10px;
+	}
+	40%{
+		left: 505px;
+		top: 200px;
+		transform: rotate(0deg);
+	}
+	60%{
+		left: 250px;
+		top: 200px;
+		border:solid red 1px;
+		transform: rotate(45deg);
+	}
+	80%{
+		left: 10px;
+		top: 200px;
+		width: 75px;
+		height: 75px;
+		border:solid blue 1px;
+		border-radius: 0%;
+		background: white;
+		transform: rotate(0deg);
+	}
+	100%{
+		left: 350px;
+		top: 400px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: linear-gradient(#f76B1C, #FBDA61);
+	}
+}
